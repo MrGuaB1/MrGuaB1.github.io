@@ -2,10 +2,10 @@ var chartDom = document.getElementById('main');
 var myChart = echarts.init(chartDom);
 var option;
 
-const upColor = '#ec0000';
-const upBorderColor = '#8A0000';
-const downColor = '#00da3c';
-const downBorderColor = '#008F28';
+var upColor = '#ec0000';
+var upBorderColor = '#8A0000';
+var downColor = '#00da3c';
+var downBorderColor = '#008F28';
 // Each item: open，close，lowest，highest
 const mydata = [
   ['2021-07-09', 21.0, 13.85, 13.74, 21.0],
@@ -145,7 +145,7 @@ const mydata = [
   ['2024-03-15', 10.12, 9.9, 9.63, 10.51],
   ['2024-03-22', 9.95, 9.74, 9.68, 10.2]
 ];
-const data0 = splitData(mydata);
+var data0 = splitData(mydata);
 function splitData(rawData) {
   const categoryData = [];
   const values = [];
